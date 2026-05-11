@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EES - Login</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">EES</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="grammar.html">Grammar</a>
+    <a href="quiz.html">Quiz</a>
+    <span id="auth-nav"></span>
+  </nav>
+</header>
+
+<section class="auth-section">
+  <div class="auth-card">
+    <h2>Selamat Datang 👋</h2>
+    <p class="subtitle">Login untuk melanjutkan belajar Bahasa Inggris</p>
+
+    <div class="msg" id="msg"></div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="nama@email.com" autocomplete="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Masukkan password" autocomplete="current-password">
+    </div>
+
+    <div class="forgot">
+      <a href="#">Lupa password?</a>
+    </div>
+
+    <button class="btn-full" onclick="handleLogin()">Masuk</button>
+
+    <div class="divider">atau</div>
+
+    <p class="auth-link">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Easy English Start | Tentang | Kontak
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>

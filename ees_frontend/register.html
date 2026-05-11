@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EES - Daftar</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">EES</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="grammar.html">Grammar</a>
+    <a href="quiz.html">Quiz</a>
+    <span id="auth-nav"></span>
+  </nav>
+</header>
+
+<section class="auth-section">
+  <div class="auth-card">
+    <h2>Buat Akun Baru ✏️</h2>
+    <p class="subtitle">Daftar gratis dan mulai belajar Bahasa Inggris</p>
+
+    <div class="msg" id="msg"></div>
+
+    <div class="form-group">
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" placeholder="Nama kamu" autocomplete="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="nama@email.com" autocomplete="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Minimal 6 karakter" oninput="checkStrength(this.value)" autocomplete="new-password">
+      <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+      <span class="input-hint" id="strengthText"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm">Konfirmasi Password</label>
+      <input type="password" id="confirm" placeholder="Ulangi password" autocomplete="new-password">
+    </div>
+
+    <button class="btn-full" onclick="handleRegister()">Daftar Sekarang</button>
+
+    <div class="divider">atau</div>
+
+    <p class="auth-link">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Easy English Start | Tentang | Kontak
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>
